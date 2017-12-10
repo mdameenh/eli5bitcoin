@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Explain Bitcoin - Comprehensive guide to Bitcoin</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+    <script src="../static/scripts/eli5bitcoin.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/eli5bitcoin.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+  </head>
+  <body>
+    <div id="main-div" ng-app="eli5bitcoin" ng-controller="mainController">
+      <div id="header-div">
+        <div id="header">
+          <div id="mainheader">ELI5:Bitcoin</div>
+          <div id="subheader">Explain Like I'm Five</div>
+        </div>
+      </div>
+      <div id="navbar-div">
+        <img id="expandicon" src="../static/images/expandicon.png" width="30px" ng-click="showfilter=!showfilter;">
+        <p id="nav-learn" class="nav-items" ng-click="getContent($event)">learn</p>
+        <p class="nav-items" ng-click="getContent($event)">store</p>
+        <p class="nav-items" ng-click="getContent($event)">buy</p>
+        <p class="nav-items" ng-click="getDonatePage($event)">donate</p>
+      </div>
+      <div id="main-content">
+        <div id="route-div" ng-hide="showfilter">
+          <div class="toc-header">Content</div>
+          <div id="toc-container">
+            <div class="toc-item"  ng-repeat="entry in content" ng-bind="entry.title"></div>
+          </div>
+        </div>
+        <div id="content-div">
+          <div class="content-item" ng-repeat="item in content">
+            <div class="content-title" ng-bind="item.title"></div>
+            <div class="content-description" ng-bind="item.description"></div>
+            <img ng-attr-src="{{item.image}}">
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

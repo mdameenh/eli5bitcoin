@@ -1,0 +1,100 @@
+body, html, #main-div{
+  height:100%;
+}
+
+#header {
+  float:right;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#mainheader {
+  margin-right:20px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+#subheader {
+  float:right;
+  margin-right: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+
+#header-div {
+  background-color: #000000;
+  overflow: auto;
+}
+
+#navbar-div {
+  background-color: #333333;
+  overflow: auto;
+}
+
+#expandicon {
+  filter: invert(100%);
+  float: left;
+  margin:5px;
+}
+
+.nav-items{
+  float:left;
+  font-size: 16px;
+  margin:10px 10px 10px 20px;
+}
+
+.toc-header {
+  margin: 20px 20px 0px 20px;
+  color: #eeeeee;
+}
+
+.toc-item {
+  margin: 20px;
+  color: #eeeeee;
+}
+
+#toc-container {
+  float: right;
+}
+
+#route-div {
+  transition: width 1s;
+  background-color: #555555;
+  width: 15%;
+  float:left;
+  min-width: 200px;
+}
+
+.ng-hide {
+  width: 0px;
+}
+
+#content-div {
+  float: right;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  margin: 50px;
+}
+
+.content-title {
+  font-size: 35px;
+  color: #222222;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#main-content{
+  height: 100%;
+  display: flex;
+}
+
+.content-description {
+  font-size: 20px;
+  color: #444444;
+  margin-bottom: 20px;
+}
+
+* {
+    margin: 0; color:#cccccc;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    }
